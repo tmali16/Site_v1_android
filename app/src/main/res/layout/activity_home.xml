@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.playmarket.gloolgle.site_v1_android.HomeActivity">
+    tools:context="com.playmarket.gloolgle.site_v1_android.home.HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -16,11 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/relLayout1">
-
             <include layout="@layout/layout_top_tabs"/>
-
         </RelativeLayout>
-
 
             <!--Middle section (body)-->
 
@@ -28,20 +25,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/relLayout2"
-                android:layout_below="@id/relLayout1">
-                <android.support.v4.widget.SwipeRefreshLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/refresh">
-                    <ListView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/listViews">
-                    </ListView>
-                </android.support.v4.widget.SwipeRefreshLayout>
+                android:layout_below="@id/relLayout1"
+                android:background="@color/white">
+
+                <include
+                    layout="@layout/fragment_home"
+                    android:layout_centerHorizontal="false"
+                    android:layout_marginBottom="15dp" />
             </RelativeLayout>
 
         <!--bottom navigation-->
+        <!--<include   layout="@layout/layout_bottom_navbar"/>-->
 
     </RelativeLayout>
 

@@ -32,5 +32,6 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
     compile 'com.squareup.retrofit2:converter-gson:2.4.0'
-
+    compile 'com.github.ittianyu:BottomNavigationViewEx:1.2.4' //navbar
+    compile 'me.relex:circleindicator:1.2.2@aar'
 }

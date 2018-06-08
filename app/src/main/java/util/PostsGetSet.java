@@ -1,8 +1,10 @@
-package com.playmarket.gloolgle.site_v1_android;
+package util;
 
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import java.text.DateFormat;
 
 public class PostsGetSet {
     @SerializedName("id")
@@ -19,16 +21,25 @@ public class PostsGetSet {
     private Integer types;
     private Integer hair;
     private String image_1;
-    private String image2;
-    private String image3;
-    private String image4;
-    private String image5;
-    private String appart1;
-    private String appart2;
-    private String appartNaigth;
-    private String outside1;
-    private String outside2;
-    private String outsideNigth;
+    private String image_2;
+    private String image_3;
+    private String image_4;
+    private String image_5;
+    private String appart_1;
+    private String appart_2;
+    private String appart_Naigth;
+    private String outside_1;
+    private String outside_2;
+    private String outside_Nigth;
+    private DateFormat update;
+
+    public DateFormat getUpdate() {
+        return update;
+    }
+
+    public void setUpdate(DateFormat update) {
+        this.update = update;
+    }
 
     public Integer getId() {
         return id;
@@ -122,87 +133,87 @@ public class PostsGetSet {
         return image_1;
     }
 
-    public void setImage_1(String image1) {
+    public void setImage_1(String image_1) {
         this.image_1 = image_1;
     }
 
-    public String getImage2() {
-        return image2;
+    public String getImage_2() {
+        return image_2;
     }
 
-    public void setImage2(String image2) {
-        this.image2 = image2;
+    public void setImage_2(String image_2) {
+        this.image_2 = image_2;
     }
 
-    public String getImage3() {
-        return image3;
+    public String getImage_3() {
+        return image_3;
     }
 
-    public void setImage3(String image3) {
-        this.image3 = image3;
+    public void setImage_3(String image_3) {
+        this.image_3 = image_3;
     }
 
-    public String getImage4() {
-        return image4;
+    public String getImage_4() {
+        return image_4;
     }
 
-    public void setImage4(String image4) {
-        this.image4 = image4;
+    public void setImage_4(String image_4) {
+        this.image_4 = image_4;
     }
 
-    public String getImage5() {
-        return image5;
+    public String getImage_5() {
+        return image_5;
     }
 
-    public void setImage5(String image5) {
-        this.image5 = image5;
+    public void setImage_5(String image_5) {
+        this.image_5 = image_5;
     }
 
-    public String getAppart1() {
-        return appart1;
+    public String getAppart_1() {
+        return appart_1;
     }
 
-    public void setAppart1(String appart1) {
-        this.appart1 = appart1;
+    public void setAppart_1(String appart_1) {
+        this.appart_1 = appart_1;
     }
 
-    public String getAppart2() {
-        return appart2;
+    public String getAppart_2() {
+        return appart_2;
     }
 
-    public void setAppart2(String appart2) {
-        this.appart2 = appart2;
+    public void setAppart_2(String appart_2) {
+        this.appart_2 = appart_2;
     }
 
-    public String getAppartNaigth() {
-        return appartNaigth;
+    public String getAppart_Naigth() {
+        return appart_Naigth;
     }
 
-    public void setAppartNaigth(String appartNaigth) {
-        this.appartNaigth = appartNaigth;
+    public void setAppart_Naigth(String appart_Naigth) {
+        this.appart_Naigth = appart_Naigth;
     }
 
-    public String getOutside1() {
-        return outside1;
+    public String getOutside_1() {
+        return outside_1;
     }
 
-    public void setOutside1(String outside1) {
-        this.outside1 = outside1;
+    public void setOutside_1(String outside_1) {
+        this.outside_1 = outside_1;
     }
 
-    public String getOutside2() {
-        return outside2;
+    public String getOutside_2() {
+        return outside_2;
     }
 
-    public void setOutside2(String outside2) {
-        this.outside2 = outside2;
+    public void setOutside_2(String outside_2) {
+        this.outside_2 = outside_2;
     }
 
-    public String getOutsideNigth() {
-        return outsideNigth;
+    public String getOutside_Nigth() {
+        return outside_Nigth;
     }
 
-    public void setOutsideNigth(String outsideNigth) {
-        this.outsideNigth = outsideNigth;
+    public void setOutside_Nigth(String outside_Nigth) {
+        this.outside_Nigth = outside_Nigth;
     }
 }

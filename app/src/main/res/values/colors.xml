@@ -6,7 +6,8 @@
 
 
     <color name="grey">#bfbfbf</color>
-    <color name="softgrey">#e1e1e1</color>
+    <color name="softgrey">#ececec</color>
     <color name="white">#fff</color>
     <color name="black">#000</color>
+    <color name="circle_color">#00ddff</color>
 </resources>

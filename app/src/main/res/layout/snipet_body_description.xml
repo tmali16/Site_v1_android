@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/bodyDescription"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:foregroundGravity="center"
+            android:text="Грудь:"
+            tools:layout_editor_absoluteX="185dp"
+            tools:layout_editor_absoluteY="38dp" />
+
+        <TextView
+            android:id="@+id/bodyDescription4"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:foregroundGravity="center"
+            android:text="Вес:"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="38dp" />
+
+        <TextView
+            android:id="@+id/bodyDescription3"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:foregroundGravity="center"
+            android:text="Вес:"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="38dp" />
+
+        <TextView
+            android:id="@+id/bodyDescription2"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:foregroundGravity="center"
+            android:text="Рост"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="38dp" />
+    </android.support.constraint.ConstraintLayout>
+</merge>

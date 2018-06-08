@@ -4,6 +4,10 @@
         android:id="@+id/house"
         android:icon="@drawable/ic_house"
         android:title="">
-
+    </item>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        android:title="">
     </item>
 </menu>
