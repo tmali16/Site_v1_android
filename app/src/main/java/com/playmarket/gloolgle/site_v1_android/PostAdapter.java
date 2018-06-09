@@ -90,14 +90,14 @@ public class PostAdapter extends ArrayAdapter<PostsGetSet>{
         TextView date = (TextView)row.findViewById(R.id.date_update);
 
         Button call = (Button)row.findViewById(R.id.Call);
-        String coast = "1-Час: " + item.getAppart_1() + " Сом";
+        String coast = item.getAppart_1() + " Сом";
 
 //------------------------------------------------------------------------------------
         call.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("MissingPermission")
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_CALL);
+                Intent intent = new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:"+item.getPhone()));
                 context.startActivity(intent);
             }
@@ -106,7 +106,7 @@ public class PostAdapter extends ArrayAdapter<PostsGetSet>{
         PostName.setText(item.getName());
         PostAge.setText(String.format("%s лет", item.getAge()));
         TitleCoast.setText(coast);
-        date.setText(item.getUpdate().toString());
+
 
 
         return row;

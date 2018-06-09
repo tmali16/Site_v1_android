@@ -12,6 +12,6 @@ public interface interfaceAPI {
     @GET("api/{obj}/{id}")
     Call<List<PostsGetSet>>Post(@Path("obj")String obj, @Path("id")String id);
 
-    @GET("api/post/{id}")
-    Call<List<ServicesGetSet>>Services(@Path("id")String user);
+//    @GET("api/post/{id}")
+//    Call<List<ServicesGetSet>>Services(@Path("id")String user);
 }

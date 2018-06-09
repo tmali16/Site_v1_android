@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.MemoryPolicy;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -35,12 +38,28 @@ public class ImageAdapter extends PagerAdapter {
 
     @NonNull
     @Override
-    public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        ImageView imageView = new ImageView(context);
+    public Object instantiateItem(@NonNull ViewGroup container, final int position) {
+        final ImageView imageView = new ImageView(context);
         Picasso.get()
                 .load(imageUrls[position])
+                .memoryPolicy(MemoryPolicy.NO_CACHE, MemoryPolicy.NO_STORE)
+//                .networkPolicy(NetworkPolicy.NO_CACHE)
+                .placeholder(R.drawable.ic_launcher_background)
+                .fetch(new Callback() {
+                    @Override
+                    public void onSuccess() {
+                        Picasso
+                                .get()
+                                .load(imageUrls[position])
+                                .into(imageView);
+                    }
 
-                .into(imageView);
+                    @Override
+                    public void onError(Exception e) {
+
+                    }
+                });
+//                .into(imageView);
         container.addView(imageView);
         return imageView;
     }

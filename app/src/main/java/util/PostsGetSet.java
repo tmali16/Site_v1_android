@@ -7,6 +7,7 @@ import com.google.gson.annotations.SerializedName;
 import java.text.DateFormat;
 
 public class PostsGetSet {
+
     @SerializedName("id")
     @Expose
     private Integer id;
@@ -17,9 +18,9 @@ public class PostsGetSet {
     private Integer weight;
     private Double boob;
     private String note;
-    private Integer eye;
-    private Integer types;
-    private Integer hair;
+    private String eye;
+    private String types;
+    private String hair;
     private String image_1;
     private String image_2;
     private String image_3;
@@ -31,15 +32,7 @@ public class PostsGetSet {
     private String outside_1;
     private String outside_2;
     private String outside_Nigth;
-    private DateFormat update;
 
-    public DateFormat getUpdate() {
-        return update;
-    }
-
-    public void setUpdate(DateFormat update) {
-        this.update = update;
-    }
 
     public Integer getId() {
         return id;
@@ -105,27 +98,27 @@ public class PostsGetSet {
         this.note = note;
     }
 
-    public Integer getEye() {
+    public String getEye() {
         return eye;
     }
 
-    public void setEye(Integer eye) {
+    public void setEye(String eye) {
         this.eye = eye;
     }
 
-    public Integer getTypes() {
+    public String getTypes() {
         return types;
     }
 
-    public void setTypes(Integer types) {
+    public void setTypes(String types) {
         this.types = types;
     }
 
-    public Integer getHair() {
+    public String getHair() {
         return hair;
     }
 
-    public void setHair(Integer hair) {
+    public void setHair(String hair) {
         this.hair = hair;
     }
 
@@ -216,4 +209,5 @@ public class PostsGetSet {
     public void setOutside_Nigth(String outside_Nigth) {
         this.outside_Nigth = outside_Nigth;
     }
+
 }

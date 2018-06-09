@@ -39,7 +39,7 @@ public class HomeActivity extends AppCompatActivity implements SwipeRefreshLayou
     private Context mContext = HomeActivity.this;
 
     ListView listview;
-    String url  = "http://192.168.0.100:8000/";
+    String url  = "http://192.168.1.104:8000/";
     TextView CallPhoneNumber;;
     Retrofit builder = new Retrofit.Builder()
             .baseUrl(url)
@@ -92,6 +92,7 @@ public class HomeActivity extends AppCompatActivity implements SwipeRefreshLayou
             @Override
             public void onFailure(Call<List<PostsGetSet>> call, Throwable t) {
                 Toast.makeText(HomeActivity.this, "Errer ==> " + t, Toast.LENGTH_SHORT).show();
+                Log.e("Error to response ", t.getMessage());
             }
 
         });
